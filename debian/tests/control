@@ -1,0 +1,4 @@
+Tests: unit-tests-2 unit-tests-3
+Depends: @,
+  python-twisted-core,
+  python3-twisted,

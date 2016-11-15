@@ -1,0 +1,3 @@
+# please also check http://pypi.debian.net/obsub/watch
+version=3
+https://pypi.debian.net/systemfixtures/obsub-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

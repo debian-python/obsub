@@ -1,0 +1,37 @@
+Source: obsub
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Free Ekanayaka <freee@debian.org>
+Section: python
+Priority: optional
+Build-Depends: dh-python,
+               debhelper (>= 9),
+               python-all (>= 2.6.6-3),
+               python-setuptools (>= 0.6b3),
+               python-nose,
+               python3-all,
+               python3-setuptools,
+               python3-nose,
+Standards-Version: 3.9.8
+Homepage: https://github.com/aepsil0n/obsub
+Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/obsub.git
+Vcs-Git: git://anonscm.debian.org/python-modules/packages/obsub.git
+
+Package: python-obsub
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python module that implements the observer pattern via a decorator
+ The @event decorator makes functions or methods "observable". Consuming code
+ can subscribe callbacks to these decorated callables, and the callbacks will be
+ triggered everytime the callables are invoked.
+ .
+ This package sports the Python 2 module.
+
+Package: python3-obsub
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Test fixtures providing fake versions of various system resources
+ The @event decorator makes functions or methods "observable". Consuming code
+ can subscribe callbacks to these decorated callables, and the callbacks will be
+ triggered everytime the callables are invoked.
+ .
+ This package sports the Python 3 module.
