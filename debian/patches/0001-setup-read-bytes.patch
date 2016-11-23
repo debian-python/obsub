@@ -1,0 +1,23 @@
+From: Free Ekanayaka <freee@debian.org>
+Date: Wed, 23 Nov 2016 04:39:11 +0000
+Subject: setup-read-bytes
+
+Fix setup.py reading README.rst as unicode and failing with Python 3
+if the LC_ALL is set to POSIX.
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index b11b95f..d4decc6 100755
+--- a/setup.py
++++ b/setup.py
+@@ -7,7 +7,7 @@ from setuptools import setup
+ # Create a front page for PyPI:
+ long_description = None
+ try:
+-    long_description = open('README.rst').read()
++    long_description = open('README.rst', "rb").read().decode("utf-8")
+     long_description += '\n' + open('CHANGELOG.rst').read()
+ except IOError:
+     # some file is not available
