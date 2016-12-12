@@ -1,3 +1,9 @@
+obsub (0.2-3) unstable; urgency=medium
+
+  * Fix typo in debian/watch
+
+ -- Free Ekanayaka <freee@debian.org>  Mon, 12 Dec 2016 14:20:54 +0000
+
 obsub (0.2-2) unstable; urgency=medium
 
   * Add setup-read-bytes patch to read README.rst as bytes and
